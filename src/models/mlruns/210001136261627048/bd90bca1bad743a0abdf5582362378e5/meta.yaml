@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/210001136261627048/bd90bca1bad743a0abdf5582362378e5/artifacts
+end_time: 1731953732110
+entry_point_name: ''
+experiment_id: '210001136261627048'
+lifecycle_stage: active
+run_id: bd90bca1bad743a0abdf5582362378e5
+run_name: AdaBoostClf-Precision
+run_uuid: bd90bca1bad743a0abdf5582362378e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731953725313
+status: 3
+tags: []
+user_id: juanvieira
