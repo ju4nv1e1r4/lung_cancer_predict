@@ -1,0 +1,16 @@
+artifact_uri: file:///home/juanvieira/local/lung_cancer/lung-cancer-prediction/src/notebooks/mlruns/713352150384851394/3398815049204545b044faed1198f14c/artifacts
+deleted_time: 1726858596399
+end_time: 1726857375658
+entry_point_name: ''
+experiment_id: '713352150384851394'
+lifecycle_stage: deleted
+run_id: 3398815049204545b044faed1198f14c
+run_name: Random Forest Classifier
+run_uuid: 3398815049204545b044faed1198f14c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726857375646
+status: 4
+tags: []
+user_id: juanvieira

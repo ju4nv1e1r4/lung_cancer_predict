@@ -1,0 +1,17 @@
+digest: '72288834'
+name: dataset
+profile: '{"num_rows": 93, "num_elements": 1395}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "gender", "required": true},
+  {"type": "long", "name": "age", "required": true}, {"type": "long", "name": "smoking",
+  "required": true}, {"type": "long", "name": "yellow_fingers", "required": true},
+  {"type": "long", "name": "anxiety", "required": true}, {"type": "long", "name":
+  "peer_pressure", "required": true}, {"type": "long", "name": "chronic_disease",
+  "required": true}, {"type": "long", "name": "fatigue ", "required": true}, {"type":
+  "long", "name": "allergy ", "required": true}, {"type": "long", "name": "wheezing",
+  "required": true}, {"type": "long", "name": "alcohol_consuming", "required": true},
+  {"type": "long", "name": "coughing", "required": true}, {"type": "long", "name":
+  "shortness_of_breath", "required": true}, {"type": "long", "name": "swallowing_difficulty",
+  "required": true}, {"type": "long", "name": "chest_pain", "required": true}]}'
+source: '{"tags": {"mlflow.user": "juanvieira", "mlflow.source.name": "train.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "e2fe6a1f8eb48a528e142d446181cc0ba59ae524"}}'
+source_type: code

@@ -1,0 +1,6 @@
+artifact_location: file:///home/juanvieira/local/lung_cancer/lung-cancer-prediction/src/notebooks/mlruns/713352150384851394
+creation_time: 1726854066969
+experiment_id: '713352150384851394'
+last_update_time: 1726854066969
+lifecycle_stage: active
+name: lung-cancer-predict

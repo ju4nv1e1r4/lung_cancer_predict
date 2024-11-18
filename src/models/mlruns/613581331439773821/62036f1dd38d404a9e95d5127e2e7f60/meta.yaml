@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/613581331439773821/62036f1dd38d404a9e95d5127e2e7f60/artifacts
+deleted_time: 1726861581455
+end_time: 1726861513042
+entry_point_name: ''
+experiment_id: '613581331439773821'
+lifecycle_stage: deleted
+run_id: 62036f1dd38d404a9e95d5127e2e7f60
+run_name: Random Forest Classifier
+run_uuid: 62036f1dd38d404a9e95d5127e2e7f60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726861513030
+status: 4
+tags: []
+user_id: juanvieira
