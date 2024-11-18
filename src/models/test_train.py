@@ -3,7 +3,7 @@ from unittest.mock import patch
 from sklearn.metrics import precision_score
 from sklearn.ensemble import AdaBoostClassifier
 from imblearn.under_sampling import RandomUnderSampler
-from train import parse_arg
+from models.train_model import parse_arg
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -35,7 +35,7 @@ def test_parse_arg():
 
 def test_model_training(mock_data):
     X_res, X_test, y_res, y_test = mock_data
-    model = AdaBoostClassifier(n_estimators=100, learning_rate=0.5, algorithm='SAMME.R')
+    model = AdaBoostClassifier(n_estimators=100, learning_rate=0.5, algorithm='SAMME')
     model.fit(X_res, y_res)
     y_pred = model.predict(X_test)
     precision = precision_score(y_test, y_pred)
