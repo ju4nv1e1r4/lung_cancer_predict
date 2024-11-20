@@ -28,7 +28,7 @@ Tests included:
 
 import pytest
 import pandas as pd
-from preprocess import load_data, preprocess_columns, encode_binary_columns, age_bracket_str
+from models.preprocess_data import load_data, preprocess_columns, encode_binary_columns, age_bracket_str
 
 
 def test_load_data():
