@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/210001136261627048/a4c15c5934734298994e3ffe71cfdaf5/artifacts
+end_time: 1732104838625
+entry_point_name: ''
+experiment_id: '210001136261627048'
+lifecycle_stage: active
+run_id: a4c15c5934734298994e3ffe71cfdaf5
+run_name: Adaboost-ImbalancedClasses
+run_uuid: a4c15c5934734298994e3ffe71cfdaf5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732104833211
+status: 3
+tags: []
+user_id: juanvieira
