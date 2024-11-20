@@ -42,6 +42,9 @@ structlog.configure(
 )
 logger = structlog.get_logger()
 
+n=0
+n+=1
+
 def parse_arg():
     parser = argparse.ArgumentParser(description='Lung Cancer Model Predictor')
 
@@ -69,6 +72,12 @@ def parse_arg():
         default='SAMME',
         help="Use the SAMME discrete boosting algorithm."
     )
+    parser.add_argument(
+        '--run-name',
+        type=str,
+        default='Run-Classifier-{}'.format(n),
+        help="Offers the option to rename the run name of experiment"
+    )
 
     return parser.parse_args()
 
@@ -78,7 +87,7 @@ df = pd.read_csv('data/processed/preprocessed.csv')
 X = df.drop(columns=['lung_cancer', 'gender', 'age', 'gen_flag', 'generation'])
 y = df['lung_cancer']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
 rus = RandomUnderSampler(random_state=42)
 X_res, y_res = rus.fit_resample(X_train, y_train)
 
@@ -96,7 +105,7 @@ def main():
     mlflow.set_tracking_uri('http://127.0.0.1:5000')
     mlflow.set_experiment('AdaBoost-prototype')
 
-    with mlflow.start_run(run_name='AdaBoostClf-Precision'):
+    with mlflow.start_run(run_name=args.run_name):
         mlflow.sklearn.autolog()
         model = AdaBoostClassifier(**params)
         model.fit(X_res, y_res)
