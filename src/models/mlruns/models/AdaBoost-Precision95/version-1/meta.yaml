@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1732191226785
+current_stage: None
+description: ''
+last_updated_timestamp: 1732191226785
+name: AdaBoost-Precision95
+run_id: a4c15c5934734298994e3ffe71cfdaf5
+run_link: ''
+source: mlflow-artifacts:/210001136261627048/a4c15c5934734298994e3ffe71cfdaf5/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/210001136261627048/a4c15c5934734298994e3ffe71cfdaf5/artifacts/model
+user_id: null
+version: 1
