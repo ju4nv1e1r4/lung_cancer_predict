@@ -2,30 +2,21 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
+import mlflow
 from sklearn.model_selection import train_test_split
-from imblearn.under_sampling import RandomUnderSampler
-from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, confusion_matrix, ConfusionMatrixDisplay, classification_report
 
 
 # Model training
+logged_model = 'src/models/mlartifacts/210001136261627048/a4c15c5934734298994e3ffe71cfdaf5/artifacts/model'
+model = mlflow.pyfunc.load_model(logged_model)
+
 df = pd.read_csv('data/processed/preprocessed.csv')
 
 X = df.drop(columns=['lung_cancer', 'gender', 'age', 'gen_flag', 'generation'])
 y = df['lung_cancer']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
-rus = RandomUnderSampler(random_state=42)
-X_res, y_res = rus.fit_resample(X_train, y_train)
-
-params = {
-    'n_estimators': 100,
-    'learning_rate': 5,
-    'algorithm': 'SAMME'
-}
-
-model = AdaBoostClassifier(**params)
-model.fit(X_res, y_res)
 
 y_pred_test = model.predict(X_test)
 y_pred_train = model.predict(X_train)
@@ -62,7 +53,7 @@ def bar_metrics_plot():
         x=df_metrics['Metrics'],
         y=df_metrics['Score'],
         name='Metrics',
-        marker_color='green'
+        marker_color='lightblue',
     ))
 
     fig.update_layout(barmode='group', title='Metrics')
@@ -71,14 +62,16 @@ def bar_metrics_plot():
 
 def conf_matrix_test_plot():
     st.subheader('Confusion Matrix - Test Side')
-    fig = px.imshow(cm_test)
+    fig = px.imshow(cm_test,
+                    text_auto=True)
     
     st.plotly_chart(fig)
 
 
 def conf_matrix_train_plot():
     st.subheader('Confusion Matrix - Train Side')
-    fig = px.imshow(cm_train)
+    fig = px.imshow(cm_train,
+                    text_auto=True)
     
     st.plotly_chart(fig)
 
@@ -99,7 +92,7 @@ def trp_fpr():
         x=df_tpr_fpr['Type'],
         y=df_tpr_fpr['Rate'],
         name='TPR x FPR',
-        marker_color='blue'
+        marker_color='lightgreen'
     ))
 
     fig.update_layout(barmode='group', title='Metrics')
