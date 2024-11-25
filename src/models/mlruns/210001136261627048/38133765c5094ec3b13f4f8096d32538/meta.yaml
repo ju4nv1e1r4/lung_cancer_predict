@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/210001136261627048/38133765c5094ec3b13f4f8096d32538/artifacts
+end_time: 1732548421062
+entry_point_name: ''
+experiment_id: '210001136261627048'
+lifecycle_stage: active
+run_id: 38133765c5094ec3b13f4f8096d32538
+run_name: test-structlog
+run_uuid: 38133765c5094ec3b13f4f8096d32538
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732548415820
+status: 3
+tags: []
+user_id: juanvieira
