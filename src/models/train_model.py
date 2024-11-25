@@ -27,6 +27,7 @@ import pandas as pd
 
 import argparse
 import structlog
+import logging
 import mlflow
 
 from sklearn.model_selection import train_test_split
@@ -38,8 +39,18 @@ structlog.configure(
     processors=[
         structlog.processors.TimeStamper(fmt="iso"),
         structlog.processors.JSONRenderer()
-    ]
+    ],
+    logger_factory=structlog.stdlib.LoggerFactory(),
+    wrapper_class=structlog.stdlib.BoundLogger,
+    cache_logger_on_first_use=True,
 )
+
+logging.basicConfig(
+    filename="reports/logs/training_logs.json",
+    level=logging.INFO,
+    format="%(message)s"
+)
+
 logger = structlog.get_logger()
 
 n=0
@@ -108,11 +119,16 @@ def main():
     with mlflow.start_run(run_name=args.run_name):
         mlflow.sklearn.autolog()
         model = AdaBoostClassifier(**params)
-        model.fit(X_res, y_res)
+        try:
+            model.fit(X_res, y_res)
+            logger.info("Model training completed successfully")
+        except Exception as e:
+            logger.error("Error during model training", error=str(e))
+            raise
 
         logger.info("Model Trained", model='AdaBoostClassifier', params=params)
 
-        mlflow.sklearn.log_model(model,'AdaBoostClassifier',)
+        mlflow.sklearn.log_model(model, 'AdaBoostClassifier')
         y_pred = model.predict(X_test)
 
         accuracy = accuracy_score(y_test, y_pred)
