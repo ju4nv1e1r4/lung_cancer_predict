@@ -1,0 +1,39 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.18.0
+model_size_bytes: 57070
+model_uuid: ff1597ab5d4e4948a06fba1bcd123310
+run_id: 582bd5688d6547ed847cc9ec9be69911
+signature:
+  inputs: '[{"type": "long", "name": "smoking", "required": true}, {"type": "long",
+    "name": "yellow_fingers", "required": true}, {"type": "long", "name": "anxiety",
+    "required": true}, {"type": "long", "name": "peer_pressure", "required": true},
+    {"type": "long", "name": "chronic_disease", "required": true}, {"type": "long",
+    "name": "fatigue ", "required": true}, {"type": "long", "name": "allergy ", "required":
+    true}, {"type": "long", "name": "wheezing", "required": true}, {"type": "long",
+    "name": "alcohol_consuming", "required": true}, {"type": "long", "name": "coughing",
+    "required": true}, {"type": "long", "name": "shortness_of_breath", "required":
+    true}, {"type": "long", "name": "swallowing_difficulty", "required": true}, {"type":
+    "long", "name": "chest_pain", "required": true}, {"type": "double", "name": "gender_F",
+    "required": true}, {"type": "double", "name": "gender_M", "required": true}, {"type":
+    "double", "name": "gen_flag_baby_boomers", "required": true}, {"type": "double",
+    "name": "gen_flag_generation_X", "required": true}, {"type": "double", "name":
+    "gen_flag_generation_Z", "required": true}, {"type": "double", "name": "gen_flag_millennials",
+    "required": true}, {"type": "double", "name": "gen_flag_silent_generation", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-11-26 12:20:42.679434'

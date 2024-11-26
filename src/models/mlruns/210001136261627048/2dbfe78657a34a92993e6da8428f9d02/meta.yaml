@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/210001136261627048/2dbfe78657a34a92993e6da8428f9d02/artifacts
+end_time: 1732623673724
+entry_point_name: ''
+experiment_id: '210001136261627048'
+lifecycle_stage: active
+run_id: 2dbfe78657a34a92993e6da8428f9d02
+run_name: decreasing-learning-rate2
+run_uuid: 2dbfe78657a34a92993e6da8428f9d02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732623669144
+status: 3
+tags: []
+user_id: juanvieira
