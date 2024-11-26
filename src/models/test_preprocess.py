@@ -28,12 +28,19 @@ Tests included:
 
 import pytest
 import pandas as pd
+from sklearn.datasets import make_classification
 from models.preprocess_data import load_data, preprocess_columns, encode_binary_columns, age_bracket_str
 
 
 def test_load_data():
     with pytest.raises(FileNotFoundError):
         load_data("non_existent_file.csv")
+
+
+def data_validation():
+    X, y = make_classification(n_samples=309, n_features=20, random_state=42)
+    assert X.shape == (309, 20), 'The shape of X should be (309, 20)'
+    assert y.shape == (309,), 'The shape of y should be (309,)'       
 
 
 def test_preprocess_columns():
