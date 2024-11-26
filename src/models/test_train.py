@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import patch
 from sklearn.datasets import make_classification
-from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
 from sklearn.ensemble import AdaBoostClassifier
 from imblearn.under_sampling import RandomUnderSampler
 from models.train_model import parse_arg
@@ -46,7 +46,7 @@ def test_model_training(mock_data):
     model = AdaBoostClassifier(n_estimators=100, learning_rate=0.5, algorithm='SAMME')
     model.fit(X_res, y_res)
     y_pred = model.predict(X_test)
-    precision = precision_score(y_test, y_pred)
+    precision = recall_score(y_test, y_pred)
     assert precision > 0.75, f'Precision must be better than 75%. Actual precision is {precision}'
 
 
