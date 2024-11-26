@@ -1,7 +1,7 @@
 import mlflow
 import pandas as pd
 
-logged_model = 'src/models/mlartifacts/210001136261627048/a4c15c5934734298994e3ffe71cfdaf5/artifacts/model'
+logged_model = 'src/models/mlartifacts/210001136261627048/2dbfe78657a34a92993e6da8428f9d02/artifacts/model'
 
 model = mlflow.pyfunc.load_model(logged_model)
 
