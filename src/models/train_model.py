@@ -53,9 +53,6 @@ logging.basicConfig(
 
 logger = structlog.get_logger()
 
-n=0
-n+=1
-
 def parse_arg():
     parser = argparse.ArgumentParser(description='Lung Cancer Model Predictor')
 
@@ -86,7 +83,7 @@ def parse_arg():
     parser.add_argument(
         '--run-name',
         type=str,
-        default='Run-Classifier-{}'.format(n),
+        default='Train-Classifier',
         help="Offers the option to rename the run name of experiment"
     )
 
