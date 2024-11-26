@@ -1,5 +1,6 @@
 import pytest
 from unittest.mock import patch
+from sklearn.datasets import make_classification
 from sklearn.metrics import precision_score
 from sklearn.ensemble import AdaBoostClassifier
 from imblearn.under_sampling import RandomUnderSampler
@@ -29,8 +30,15 @@ def test_parse_arg():
     with patch('sys.argv', test_args):
         args = parse_arg()
         assert isinstance(args.n_estimators, int)
-        assert args.learning_rate > 0
-        assert args.algorithm in ['SAMME', 'SAMME.R']
+        assert args.learning_rate > 0, 'Hyperparameter "learning_rate" should be positive.'
+        assert args.algorithm in ['SAMME', 'SAMME.R'], 'Hyperparameter "algorithm" should be "SAMME OR SAMME.R".'
+
+
+def test_fit_hasattr():
+    X, y = make_classification(n_samples=309, n_features=20, random_state=42)
+    model = AdaBoostClassifier(random_state=42)
+    fit_ = model.fit(X, y)
+    assert hasattr(fit_, "coef_"), 'Model should have attributes after training.'
 
 
 def test_model_training(mock_data):
@@ -39,4 +47,11 @@ def test_model_training(mock_data):
     model.fit(X_res, y_res)
     y_pred = model.predict(X_test)
     precision = precision_score(y_test, y_pred)
-    assert precision > 0.75
+    assert precision > 0.75, f'Precision must be better than 75%. Actual precision is {precision}'
+
+
+def test_model_prediction():
+    X, y = make_classification(n_samples=309, n_features=20, random_state=42)
+    model = AdaBoostClassifier(random_state=42).fit(X, y)
+    y_pred = model.predict(X)
+    assert set(y_pred) <= {0, 1}, 'Predictions should 0 or 1'
