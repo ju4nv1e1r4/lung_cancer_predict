@@ -37,3 +37,63 @@
 {"event": "Model training completed successfully", "timestamp": "2024-11-26T12:21:12.434923Z"}
 {"model": "AdaBoostClassifier", "params": {"n_estimators": 200, "learning_rate": 0.12, "algorithm": "SAMME"}, "event": "Model Trained", "timestamp": "2024-11-26T12:21:12.435016Z"}
 {"metrics": {"accuracy": 0.8172043010752689, "f1_score": 0.8903225806451613, "precision": 1.0, "recall": 0.8023255813953488}, "event": "Metrics calculated", "timestamp": "2024-11-26T12:21:13.712952Z"}
+{"params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 50, "criterion": "gini", "class_weight": "balanced"}, "event": "Training started", "timestamp": "2024-11-27T14:54:44.766557Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T14:54:50.108771Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 50, "criterion": "gini", "class_weight": "balanced"}, "event": "Model Trained", "timestamp": "2024-11-27T14:54:50.108869Z"}
+{"metrics": {"accuracy": 0.8494623655913979, "f1_score": 0.9078947368421053, "precision": 1.0, "recall": 0.8313253012048193, "TPR": 1.0, "FPR": 0.1686746987951807}, "event": "Metrics calculated", "timestamp": "2024-11-27T14:54:51.260943Z"}
+{"params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 50, "criterion": "gini", "class_weight": "balanced"}, "event": "Training started", "timestamp": "2024-11-27T14:55:31.798902Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T14:55:34.802432Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 50, "criterion": "gini", "class_weight": "balanced"}, "event": "Model Trained", "timestamp": "2024-11-27T14:55:34.802532Z"}
+{"metrics": {"accuracy": 0.9247311827956989, "f1_score": 0.9580838323353293, "precision": 0.9876543209876543, "recall": 0.9302325581395349, "TPR": 0.8571428571428571, "FPR": 0.06976744186046512}, "event": "Metrics calculated", "timestamp": "2024-11-27T14:55:36.093458Z"}
+{"params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 5, "criterion": "gini", "class_weight": "balanced"}, "event": "Training started", "timestamp": "2024-11-27T22:46:08.208524Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T22:46:16.581961Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 5, "criterion": "gini", "class_weight": "balanced"}, "event": "Model Trained", "timestamp": "2024-11-27T22:46:16.583598Z"}
+{"metrics": {"accuracy": 0.8817204301075269, "f1_score": 0.9325153374233128, "precision": 0.987012987012987, "recall": 0.8837209302325582, "TPR": 0.8571428571428571, "FPR": 0.11627906976744186}, "event": "Metrics calculated", "timestamp": "2024-11-27T22:46:18.388872Z"}
+{"params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 1, "criterion": "gini", "class_weight": "balanced"}, "event": "Training started", "timestamp": "2024-11-27T22:53:35.788679Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T22:53:40.731709Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 1, "criterion": "gini", "class_weight": "balanced"}, "event": "Model Trained", "timestamp": "2024-11-27T22:53:40.731893Z"}
+{"metrics": {"accuracy": 0.6666666666666666, "f1_score": 0.7832167832167832, "precision": 0.9824561403508771, "recall": 0.6511627906976745, "TPR": 0.8571428571428571, "FPR": 0.3488372093023256}, "event": "Metrics calculated", "timestamp": "2024-11-27T22:53:42.475589Z"}
+{"params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 10, "criterion": "entropy", "class_weight": "balanced"}, "event": "Training started", "timestamp": "2024-11-27T22:54:21.833397Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T22:54:26.064792Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "min_samples_split": 5, "min_samples_leaf": 2, "max_features": null, "max_depth": 10, "criterion": "entropy", "class_weight": "balanced"}, "event": "Model Trained", "timestamp": "2024-11-27T22:54:26.065050Z"}
+{"metrics": {"accuracy": 0.9247311827956989, "f1_score": 0.9580838323353293, "precision": 0.9876543209876543, "recall": 0.9302325581395349, "TPR": 0.8571428571428571, "FPR": 0.06976744186046512}, "event": "Metrics calculated", "timestamp": "2024-11-27T22:54:27.825939Z"}
+{"params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Training started", "timestamp": "2024-11-27T22:59:12.495877Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T22:59:16.907756Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Model Trained", "timestamp": "2024-11-27T22:59:16.907889Z"}
+{"metrics": {"accuracy": 0.9247311827956989, "f1_score": 0.9608938547486033, "precision": 0.9247311827956989, "recall": 1.0, "TPR": 0.0, "FPR": 0.0}, "event": "Metrics calculated", "timestamp": "2024-11-27T22:59:18.703753Z"}
+{"params": {"splitter": "random", "max_features": "log2", "max_depth": 10, "criterion": "entropy"}, "event": "Training started", "timestamp": "2024-11-27T23:01:30.561973Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:01:34.838563Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "log2", "max_depth": 10, "criterion": "entropy"}, "event": "Model Trained", "timestamp": "2024-11-27T23:01:34.838762Z"}
+{"metrics": {"accuracy": 0.9247311827956989, "f1_score": 0.9585798816568047, "precision": 0.9759036144578314, "recall": 0.9418604651162791, "TPR": 0.7142857142857143, "FPR": 0.05813953488372093}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:01:36.688604Z"}
+{"params": {"splitter": "random", "max_features": "sqrt", "max_depth": 10, "criterion": "entropy"}, "event": "Training started", "timestamp": "2024-11-27T23:04:20.903523Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:04:25.377461Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "sqrt", "max_depth": 10, "criterion": "entropy"}, "event": "Model Trained", "timestamp": "2024-11-27T23:04:25.377639Z"}
+{"metrics": {"accuracy": 0.9139784946236559, "f1_score": 0.9518072289156626, "precision": 0.9875, "recall": 0.9186046511627907, "TPR": 0.8571428571428571, "FPR": 0.08139534883720931}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:04:27.339577Z"}
+{"params": {"splitter": "random", "max_features": "sqrt", "max_depth": 10, "criterion": "gini"}, "event": "Training started", "timestamp": "2024-11-27T23:06:53.467892Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:06:58.163156Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "sqrt", "max_depth": 10, "criterion": "gini"}, "event": "Model Trained", "timestamp": "2024-11-27T23:06:58.163319Z"}
+{"metrics": {"accuracy": 0.9139784946236559, "f1_score": 0.9518072289156626, "precision": 0.9875, "recall": 0.9186046511627907, "TPR": 0.8571428571428571, "FPR": 0.08139534883720931}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:06:59.885020Z"}
+{"params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Training started", "timestamp": "2024-11-27T23:07:22.796309Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:07:27.168452Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Model Trained", "timestamp": "2024-11-27T23:07:27.168569Z"}
+{"metrics": {"accuracy": 0.967741935483871, "f1_score": 0.9836065573770492, "precision": 0.967741935483871, "recall": 1.0, "TPR": 0.0, "FPR": 0.0}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:07:28.909274Z"}
+{"params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Training started", "timestamp": "2024-11-27T23:07:39.983803Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:07:44.554616Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "random", "max_features": "log2", "max_depth": 2, "criterion": "entropy"}, "event": "Model Trained", "timestamp": "2024-11-27T23:07:44.554737Z"}
+{"metrics": {"accuracy": 0.9112903225806451, "f1_score": 0.9535864978902954, "precision": 0.9112903225806451, "recall": 1.0, "TPR": 0.0, "FPR": 0.0}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:07:46.381260Z"}
+{"params": {"splitter": "best", "max_features": "sqrt", "max_depth": null, "criterion": "gini"}, "event": "Training started", "timestamp": "2024-11-27T23:12:29.571492Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:12:34.453161Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "best", "max_features": "sqrt", "max_depth": null, "criterion": "gini"}, "event": "Model Trained", "timestamp": "2024-11-27T23:12:34.453417Z"}
+{"metrics": {"accuracy": 0.9112903225806451, "f1_score": 0.9502262443438914, "precision": 0.9722222222222222, "recall": 0.9292035398230089, "TPR": 0.7272727272727273, "FPR": 0.07079646017699115}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:12:36.225622Z"}
+{"params": {"splitter": "best", "max_features": "sqrt", "max_depth": 20, "criterion": "gini"}, "event": "Training started", "timestamp": "2024-11-27T23:17:37.494898Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:17:41.869462Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "best", "max_features": "sqrt", "max_depth": 20, "criterion": "gini"}, "event": "Model Trained", "timestamp": "2024-11-27T23:17:41.869568Z"}
+{"metrics": {"accuracy": 0.8548387096774194, "f1_score": 0.9166666666666666, "precision": 0.9611650485436893, "recall": 0.8761061946902655, "TPR": 0.6363636363636364, "FPR": 0.12389380530973451}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:17:43.660405Z"}
+{"params": {"splitter": "best", "max_features": "sqrt", "max_depth": 20, "criterion": "gini"}, "event": "Training started", "timestamp": "2024-11-27T23:19:03.215406Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:19:07.528905Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "best", "max_features": "sqrt", "max_depth": 20, "criterion": "gini"}, "event": "Model Trained", "timestamp": "2024-11-27T23:19:07.529031Z"}
+{"metrics": {"accuracy": 0.9174311926605505, "f1_score": 0.9543147208121827, "precision": 0.9690721649484536, "recall": 0.94, "TPR": 0.6666666666666666, "FPR": 0.06}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:19:09.276989Z"}
+{"params": {"splitter": "best", "max_features": "sqrt", "max_depth": 1, "criterion": "gini"}, "event": "Training started", "timestamp": "2024-11-27T23:26:11.329123Z"}
+{"event": "Model training completed successfully", "timestamp": "2024-11-27T23:26:15.711715Z"}
+{"model": "AdaBoostClassifier", "params": {"splitter": "best", "max_features": "sqrt", "max_depth": 1, "criterion": "gini"}, "event": "Model Trained", "timestamp": "2024-11-27T23:26:15.711880Z"}
+{"metrics": {"accuracy": 0.9174311926605505, "f1_score": 0.9569377990430622, "precision": 0.9174311926605505, "recall": 1.0, "TPR": 0.0, "FPR": 0.0}, "event": "Metrics calculated", "timestamp": "2024-11-27T23:26:17.446493Z"}
