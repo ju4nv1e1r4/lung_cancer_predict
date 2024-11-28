@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 
 
 # Model training
-logged_model = 'src/models/mlartifacts/210001136261627048/2dbfe78657a34a92993e6da8428f9d02/artifacts/model'
+logged_model = 'src/models/mlartifacts/545219540219233639/67bab2f9d2df49b2a1de473d6c417d50/artifacts/model'
 model = mlflow.pyfunc.load_model(logged_model)
 
 df = pd.read_csv('data/processed/preprocessed.csv')
@@ -16,7 +16,7 @@ df = pd.read_csv('data/processed/preprocessed.csv')
 X = df.drop(columns=['lung_cancer', 'gender', 'age', 'gen_flag', 'generation'])
 y = df['lung_cancer']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.35, random_state=42)
 
 y_pred_test = model.predict(X_test)
 y_pred_train = model.predict(X_train)
