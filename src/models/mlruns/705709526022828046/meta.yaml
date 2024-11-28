@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/705709526022828046
+creation_time: 1732719284917
+experiment_id: '705709526022828046'
+last_update_time: 1732719284917
+lifecycle_stage: active
+name: DTClassifier

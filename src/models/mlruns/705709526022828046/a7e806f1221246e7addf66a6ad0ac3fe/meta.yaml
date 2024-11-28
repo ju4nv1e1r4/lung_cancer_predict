@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/705709526022828046/a7e806f1221246e7addf66a6ad0ac3fe/artifacts
+end_time: 1732748667365
+entry_point_name: ''
+experiment_id: '705709526022828046'
+lifecycle_stage: active
+run_id: a7e806f1221246e7addf66a6ad0ac3fe
+run_name: Train-Classifier
+run_uuid: a7e806f1221246e7addf66a6ad0ac3fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732748661163
+status: 3
+tags: []
+user_id: juanvieira
